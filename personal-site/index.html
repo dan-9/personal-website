@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="portrait-wrapper">
+            <img src="images/portrait.jpg" alt="Portrait of Your Name" class="portrait">
+        </div>
+        <div class="intro-text">
+            <h1>Danny Tran</h1>
+            <p class="tagline">Student at California State University, Northridge</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Short bio -->
+        <section class="section">
+            <h2>About Me</h2>
+            <p>
+                I am a student at California State University, Northridge, currently studying Information Systems.
+                I am interested in technology, problem solving, and learning how information systems
+                shape organizations and everyday life.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>California State University, Northridge</strong><br>
+                    B.S. in Information Systems, Expected Graduation: June 2027
+                </li>
+                <!-- Add more degrees if you have them -->
+            </ul>
+        </section>
+
+        <!-- Work experience -->
+        <section class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>[IT Technichal Support Analyst I]</strong> – [LA General Medical Center]  
+                    <span class="item-dates">[October 15 ,2024] to [Present]</span><br>
+                    <span class="item-desc">
+                        My role as a Technical Support Analyst involves helping end users troubleshoot technical issues, guiding them through solutions, and ensuring their systems run smoothly
+			
+                    </span>
+                </li>
+                <!-- Add more list items if needed -->
+            </ul>
+        </section>
+
+        <!-- Career interests -->
+        <section class="section">
+            <h2>Career Interests</h2>
+            <p>
+                My long-term goals include working in software development,
+                IT management and cybersecurity. I am especially interested in roles that combine
+                technical problem solving with communication and teamwork.
+            </p>
+        </section>
+
+        <!-- Courses table -->
+        <section class="section">
+            <h2>Current Semester Courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Section #</th>
+                        <th>No. of Credits</th>
+                        <th>Days of Class Meeting</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Replace with your actual courses -->
+                    <tr>
+                        <td>IS 312 – Systems & Tech for Managers</td>
+                        <td>13497</td>
+                        <td>3</td>
+                        <td>Mon / Wed</td>
+                        <td>2:30 PM – 3:45 PM</td>
+                    </tr>
+                    <tr>
+                        <td>KIN 385 – Women in Sport</td>
+                        <td>19879</td>
+                        <td>3</td>
+                        <td>Online</td>
+                        <td>Asynchronous</td>
+                    </tr>           
+                    <tr>
+                        <td>URBS 310 – Growth and Sustainable Development of Cities </td>
+                        <td>12613</td>
+                        <td>3</td>
+                        <td>Mon / Wed</td>
+                        <td>10:00 AM – 11:15 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Danny Tran</p>
+    </footer>
+
+    <!-- Optional tiny bit of JS just to set the year; can be removed if not desired -->
+    <script>
+        const yearSpan = document.getElementById("year");
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>
